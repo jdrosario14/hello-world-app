@@ -30,5 +30,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'hero-app-test'
-        publish-profile: $
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_64b77b8532d34c03a125b212140f3bac }}
         package: ./dist/hello-world-app
